@@ -1,0 +1,16 @@
+{
+    "name": "rosio/cfdiarray",
+    "autoload": {
+        "psr-4": {
+            "Rosio\\Cfdiarray\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rosio"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
+    }
+}
