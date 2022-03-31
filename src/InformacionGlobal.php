@@ -2,8 +2,24 @@
 
 return [
     'attributes' => [
-        'Periodicidad' => 'periodo de la informacion del comprobante legal - catCFDI:c_Periodicidad - required',
-        'Meses' => 'meses al que corresponde la informacion del comprobante legal - catCFDI:c_Meses, required',
-        'Año' => 'año al que corresponde la información del comprobante global. - xs:short - valor minimo:2021 - required',
+        'Periodicidad' => [
+            'Descripción' => 'Atributo requerido para expresar el período al que corresponde la información del comprobante global.',
+            'Uso' => 'requerido',
+            'Tipo Especial' => 'catCFDI:c_Periodicidad',
+        ],
+
+        'Meses' =>[
+            'Descripción' => 'Atributo requerido para expresar el mes o los meses al que corresponde la información del comprobante global.',
+            'Uso' => 'requerido',
+            'Tipo Especial' => 'catCFDI:c_Meses',
+        ],
+
+        'Año' => [
+            'Descripción' => ' Atributo requerido para expresar el año al que corresponde la información del comprobante global.',
+            'Uso' => 'requerido',
+            'Tipo Base' => 'xs:short',
+            'Valor Minimo Incluyente' => '2021',
+            'Espacio en Blanco' => 'Colapsar',
+        ],
     ]
 ];
